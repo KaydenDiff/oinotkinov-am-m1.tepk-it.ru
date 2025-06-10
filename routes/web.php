@@ -1,14 +1,15 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/models', [ModelsController::class, 'index'])->name('models.index');
-Route::get('/models/create', [ModelsController::class, 'create'])->name('models.create');
-Route::post('/models/create', [ModelsController::class, 'store'])->name('models.store');
-Route::get('/models/edit/{model}', [ModelsController::class, 'edit']);
-Route::get('/models/history/{model}', [ModelsController::class, 'history'])->name('models.history');
-Route::post('/models/edit/{model}', [ModelsController::class, 'update'])->name('models.update');
-Route::get('/models/delete/{model}', [ModelsController::class, 'destroy']);
+Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
+Route::post('/products/create', [ProductController::class, 'store'])->name('products.store');
+Route::get('/products/edit/{product}', [ProductController::class, 'edit'])->name('products.edit');
+Route::post('/products/edit/{product}', [ProductController::class, 'update'])->name('products.update');
+Route::get('/products/{product}/materials', [ProductController::class, 'materials'])->name('products.materials');
+

@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Gabriola", sans-serif;
 }
 .main-background{
     background: #ffffff;
@@ -10,7 +10,7 @@
     background: #F4E8D3;
 }
 .accent{
-    color: #67ba80;
+    color: #2D6033;
 }
 .flex{
     display: flex;
@@ -21,13 +21,59 @@
     padding: 20px;
 }
 .bigFont{
-    font-size: 1.3em;
+    font-size: 2em;
+}
+.text{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.text a:hover {
+    color: #2D6033;
+}
+nav {
+    display: flex;
+}
+header{
+    background: #BBD9B2;
+}
+nav ul{
+    margin: 20px 0 0 20px;
+    flex-direction: row;
+}
+nav img{
+    margin-top: 10px;
+}
+nav a {
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+}
+nav a:hover {
+    color: white;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title .btn{
+    margin-right: 30px;
+}
+form{
+    margin-left: 20px;
+    font-size: 30px;
+}
+form input, select {
+    font-size: 20px;
+}
+h1{
+    margin: 30px 0 0 20px ;
 }
 .div85{
     width: 85%;
 }
-.div15{
-    width: 15%;
+.div10{
+    width: 5%;
 }
 main a {
     text-decoration: none;
@@ -41,8 +87,52 @@ main a {
     border-radius: 10px;
     margin-top: 20px;
     margin-left: 20px;
+    font-size: 20px;
     display: inline-block;
     padding: 20px;
-    background: #67ba80;
+    background: #2D6033;
     border: none;
+}
+.btn:hover{
+    background: #BBD9B2 ;
+    color: black;
+
+}
+.submit{
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 20px;
+    background: #2D6033;
+    border: none;
+    font-size: 20px;
+}
+.submit:hover{
+    background: #BBD9B2 ;
+    color: black;
+}
+
+.card{
+    color: black;
+}
+.card:hover{
+    color: #2D6033;
+}
+.table{
+    margin: auto;
+}
+table{
+    text-align: center;
+}
+th {
+    border: 2px solid black;
+}
+td {
+    border: 2px solid black;
+}
+.materials{
+    align-content: center;
+    justify-content: center;
+    text-align: center;
 }
